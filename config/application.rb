@@ -13,10 +13,11 @@ module Tg
 
     # Configuration for the application, engines, and railties goes here.
     #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
+    config.i18n.available_locales = [:en, :ru, :ua]
+    config.i18n.default_locale = :ru
+    config.i18n.fallbacks = true
+
+    config.time_zone = "Europe/Kiev"
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
